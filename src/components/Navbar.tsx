@@ -1,4 +1,4 @@
-import Logo from "../assets/images/Logo.png";
+import LogoNavbar from "../assets/images/LogoNavbar.png";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
@@ -40,7 +40,7 @@ const Navbar = () => {
       <div className="flex justify-between items-center bg-white sm:py-1 sm:px-4">
         <div>
           <a href="/">
-            <img src={Logo} alt="Logo" className="w-[80px] py-1" />
+            <img src={LogoNavbar} alt="Logo" className="w-[100px] py-1" />
           </a>
         </div>
 
