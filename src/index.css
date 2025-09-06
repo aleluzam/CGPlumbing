@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@theme {
+  --color-orange-perfect: #e5663b;
+}
+
+@font-face {
+  font-family: "OpenSans-Bold";
+  src: url("./assets/fonts/OpenSans/OpenSans-Bold.ttf") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "BarlowCondensed-ExtraBold";
+  src: url("./assets/fonts/BarlowCondensed/BarlowCondensed-ExtraBold.ttf")
+    format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "BarlowCondensed-Bold";
+  src: url("./assets/fonts/BarlowCondensed/BarlowCondensed-Bold.ttf")
+    format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "OpenSans-Light";
+  src: url("./assets/fonts/OpenSans/OpenSans-Light.ttf") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+.open-sans-bold {
+  font-family: "OpenSans-Bold";
+}
+
+.barlow-condensed-extrabold {
+  font-family: "BarlowCondensed-ExtraBold";
+}
+
+.barlow-condensed-bold {
+  font-family: "BarlowCondensed-Bold";
+}
+
+.open-sans-light {
+  font-family: "OpenSans-Light";
+}
