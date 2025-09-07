@@ -1,4 +1,4 @@
-import FondoTuberias from "../assets/images/FondoTuberiasAzul.gif";
+import FondoTuberias from "../assets/images/FondoTuberias.jpg";
 import Logo from "../assets/images/Logo.png";
 import ContactButton from "./Button";
 

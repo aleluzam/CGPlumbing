@@ -1,10 +1,11 @@
 import HeroSection from "./HeroSection";
+import Services from "./Services";
 
 const Principal = () => {
   return (
     <>
       <HeroSection />
-      <h1 className="flex flex-col h-screen">Hola, esto sigue</h1>
+      <Services />
     </>
   );
 };

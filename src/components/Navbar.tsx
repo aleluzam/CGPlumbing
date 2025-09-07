@@ -37,7 +37,7 @@ const Navbar = () => {
   ];
   return (
     <nav className="fixed z-50 w-full">
-      <div className="flex justify-between items-center bg-white sm:py-1 sm:px-4">
+      <div className="flex justify-between items-center bg-white sm:py-1 sm:px-4 ">
         <div>
           <a href="/">
             <img src={LogoNavbar} alt="Logo" className="w-[100px] py-1" />
