@@ -1,5 +1,5 @@
-import Qr from "../assets/images/qr.svg";
-import Phone from "../assets/images/Phone.svg";
+import Qr from "../assets/images/qr.png";
+import Phone from "../assets/images/Phone.png";
 
 interface Props {
   toggleActive: () => void;
