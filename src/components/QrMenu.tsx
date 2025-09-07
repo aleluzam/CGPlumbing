@@ -1,4 +1,4 @@
-import Qr from "../assets/images/Qr.png";
+import Qr from "../assets/images/qr.svg";
 
 interface Props {
   active: boolean;
