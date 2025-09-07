@@ -2,7 +2,7 @@ import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import Principal from "./components/Principal";
 import Layout from "./components/Layout";
-
+//Hola
 function App() {
   return (
     <div className=" min-h-screen flex flex-col">
