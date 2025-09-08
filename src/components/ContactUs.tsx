@@ -1,4 +1,5 @@
 import Qr from "../assets/images/qr.svg";
+import ContactForm from "./ContactForm";
 
 const ContactUs = () => {
   const contact = [
@@ -7,36 +8,48 @@ const ContactUs = () => {
   ];
 
   return (
-    <div className="min-h-screen lg:h-screen   ">
-      <div>
-        <h1 className="md:text-6xl py-3 barlwow-condensed-bold text-center sm:text-4xl text-2xl lg:text-6xl font-bold mb-2 text-blue-perfect">
+    <div className="min-h-screen lg:h-screen">
+      <div className="px-4 sm:px-6 lg:px-7">
+        <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl py-3 barlwow-condensed-bold text-center font-bold mb-2 text-blue-perfect">
           Contact Us
         </h1>
-        <h3 className="lg:text-lg text-center text-xs sm:text-xs md:text-lg open-sans-light">
+        <h3 className="text-xs sm:text-sm md:text-base lg:text-lg text-center open-sans-light px-4">
           Reach out for support via phone or email. We provide free estimates.
         </h3>
       </div>
-      <div className="flex flex-col lg:flex-row px-7 py-10 gap-20  justify-between">
-        <ul className=" gap-10 flex items-center flex-col lg:px-5 ">
-          {contact.map((m) => (
-            <div className="lg:py-5 flex items-center lg:gap-30 gap-10 md:gap-20 xl:gap-25">
-              <div className="text-left">
-                <h1
-                  key={m.id}
-                  className="barlow-condensed-bold lg:text-5xl py-5"
-                >
-                  {m.lenguage}
-                </h1>
-                <h3 className="lg:text-xl text-sm md:text-2xl xl:text-3xl ">
-                  {m.number}
-                </h3>
-              </div>
-              <img src={m.qr} alt="QR" className="w-30" />
-            </div>
-          ))}
-        </ul>
 
-        <div className="border-2 w-50 "></div>
+      <div className="flex flex-col lg:flex-row px-4 sm:px-6 lg:px-7 py-4 sm:py-5 lg:py-6 gap-6 sm:gap-8 lg:gap-12 xl:gap-16">
+        {/* Sección de contactos */}
+        <div className="w-full lg:flex-shrink-0 lg:w-auto">
+          <ul className="gap-6 sm:gap-8 lg:gap-10 flex items-center flex-col p-4 sm:p-6 lg:p-8">
+            {contact.map((m) => (
+              <div
+                key={m.id}
+                className="w-full py-3 sm:py-4 lg:py-5 flex items-center justify-between gap-4 sm:gap-6 lg:gap-8 xl:gap-10"
+              >
+                <div className="text-left flex-1 min-w-0">
+                  <h1 className="barlow-condensed-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl py-2 sm:py-3 lg:py-5 leading-tight">
+                    {m.lenguage}
+                  </h1>
+                  <h3 className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl break-all">
+                    {m.number}
+                  </h3>
+                </div>
+                <div className="flex-shrink-0">
+                  <img
+                    src={m.qr}
+                    alt="QR"
+                    className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 xl:w-32 xl:h-32"
+                  />
+                </div>
+              </div>
+            ))}
+          </ul>
+        </div>
+
+        <div className="w-full lg:flex-1">
+          <ContactForm />
+        </div>
       </div>
     </div>
   );

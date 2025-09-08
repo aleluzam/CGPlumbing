@@ -26,9 +26,9 @@ const Services = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-blue-perfect px-4 pt-8">
+    <div className="min-h-screen bg-blue-perfect px-7 pt-8">
       <div className="flex flex-col items-center lg:gap-5">
-        <div className="text-center mb-8 lg:mb-15">
+        <div className="text-center mb-8 lg:mb-10">
           <h1 className="md:text-6xl barlwow-condensed-bold sm:text-4xl text-2xl lg:text-6xl font-bold mb-2 text-white">
             Our Plumbing Services
           </h1>

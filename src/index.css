@@ -14,6 +14,14 @@
 }
 
 @font-face {
+  font-family: "OpenSans-Regular";
+  src: url("./assets/fonts/OpenSans/OpenSans-Regular.ttf") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
   font-family: "BarlowCondensed-ExtraBold";
   src: url("./assets/fonts/BarlowCondensed/BarlowCondensed-ExtraBold.ttf")
     format("woff2");
@@ -39,8 +47,24 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "OpenSans-Semibold";
+  src: url("./assets/fonts/OpenSans/OpenSans-Semibold.ttf") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 .open-sans-bold {
   font-family: "OpenSans-Bold";
+}
+
+.open-sans-semibold {
+  font-family: "OpenSans-Semibold";
+}
+
+.open-sans-regular {
+  font-family: "OpenSans-Regular";
 }
 
 .barlow-condensed-extrabold {
