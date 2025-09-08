@@ -29,7 +29,7 @@ const Services = () => {
     <div className="min-h-screen bg-blue-perfect px-4 pt-8">
       <div className="flex flex-col items-center lg:gap-5">
         <div className="text-center mb-8 lg:mb-15">
-          <h1 className="md:text-6xl sm:text-4xl text-2xl lg:text-6xl font-bold mb-2 text-white">
+          <h1 className="md:text-6xl barlwow-condensed-bold sm:text-4xl text-2xl lg:text-6xl font-bold mb-2 text-white">
             Our Plumbing Services
           </h1>
           <h3 className="lg:text-lg text-xs sm:text-xs md:text-lg open-sans-light text-white">

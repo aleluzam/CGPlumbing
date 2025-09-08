@@ -1,3 +1,4 @@
+import ContactUs from "./ContactUs";
 import HeroSection from "./HeroSection";
 import Services from "./Services";
 
@@ -6,6 +7,7 @@ const Principal = () => {
     <>
       <HeroSection />
       <Services />
+      <ContactUs />
     </>
   );
 };

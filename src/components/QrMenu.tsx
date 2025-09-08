@@ -11,7 +11,7 @@ const QrMenu = ({ active }: Props) => {
           active ? "opacity-100" : "opacity-0 invisible"
         } flex flex-col justify-center items-center h-screen w-full transition-all duration-500`}
       >
-        <div className="bg-white p-10 rounded-2xl opacity-90 ">
+        <div className="bg-white px-8 rounded-2xl opacity-90 ">
           <h1 className="text-center barlow-condensed-bold text-3xl lg:text-3xl p-2">
             Get in Touch
           </h1>

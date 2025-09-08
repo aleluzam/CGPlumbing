@@ -2,6 +2,7 @@ import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import Principal from "./components/Principal";
 import Layout from "./components/Layout";
+import ContactUs from "./components/ContactUs";
 //Hola
 function App() {
   return (
@@ -11,7 +12,11 @@ function App() {
         <Route path="/" element={<Principal />} />
         <Route
           path="/contactus"
-          element={<div className="text-2xl text-center py-20">Contact Us</div>}
+          element={
+            <div className="text-2xl text-center py-20">
+              <ContactUs />
+            </div>
+          }
         />{" "}
         <Route
           path="/aboutus"
