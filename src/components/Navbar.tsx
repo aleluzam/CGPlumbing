@@ -86,13 +86,22 @@ const Navbar = () => {
         </button>
       </div>
       <div
-        className={`bg-blue-300 transition-all duration-300 absolute w-full sm:hidden ${
+        className={`bg-[#3a9b8e] transition-all duration-300 absolute w-full sm:hidden ${
           isOpen ? "opacity-100" : "opacity-0 invisible"
         }`}
       >
         <ul className="flex flex-col py-2 ">
           {elements.map((e) => (
-            <li onClick={toggleIsOpen} className="open-sans-light text-center">
+            <li
+              key={e.id}
+              onClick={() => {
+                toggleLink(e.id);
+                toggleIsOpen();
+              }}
+              className={`open-sans-regular text-center my-2 ${
+                link == e.id ? "underline" : ""
+              }`}
+            >
               <Link to={e.link}>{e.name}</Link>
             </li>
           ))}

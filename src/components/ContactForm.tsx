@@ -29,7 +29,7 @@ function ContactForm() {
           id="name"
           type="text"
           name="name"
-          className="w-full px-3 py-2 border border-gray-300 rounded text-left"
+          className="w-full px-3 py-2 border border-gray-300 rounded-2xl text-left"
         />
         <ValidationError
           prefix="Name"
@@ -48,7 +48,7 @@ function ContactForm() {
           id="email"
           type="email"
           name="email"
-          className="w-full px-3 py-2 border border-gray-300 rounded text-left"
+          className="w-full px-3 py-2 border border-gray-300 rounded-2xl text-left"
         />
         <ValidationError
           prefix="Email"
@@ -66,7 +66,7 @@ function ContactForm() {
         <textarea
           id="message"
           name="message"
-          className="w-full px-3 py-2 border border-gray-300 rounded text-left"
+          className="w-full px-3 py-2 border border-gray-300 rounded-2xl text-left"
         />
         <ValidationError
           prefix="Message"
@@ -79,7 +79,7 @@ function ContactForm() {
           <button
             type="submit"
             disabled={state.submitting}
-            className="px-4 py-2 bg-blue-perfect text-white rounded hover:bg-[#3a9b8e] disabled:opacity-50"
+            className="px-4 py-2 bg-blue-perfect text-white rounded-2xl hover:bg-[#3a9b8e] disabled:opacity-50"
           >
             Submit
           </button>

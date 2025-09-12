@@ -8,7 +8,7 @@ const ContactUs = () => {
   ];
 
   return (
-    <div className="min-h-screen lg:h-screen">
+    <div className="min-h-screen lg:h-screen py-18">
       <div className="px-4 sm:px-6 lg:px-7">
         <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl py-3 barlwow-condensed-bold text-center font-bold mb-2 text-blue-perfect">
           Contact Us

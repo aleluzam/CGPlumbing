@@ -3,7 +3,9 @@ import { Routes, Route } from "react-router-dom";
 import Principal from "./components/Principal";
 import Layout from "./components/Layout";
 import ContactUs from "./components/ContactUs";
-//Hola
+import Galery from "./components/Galery";
+import AboutUs from "./components/AboutUs";
+
 function App() {
   return (
     <div className=" min-h-screen flex flex-col">
@@ -13,19 +15,13 @@ function App() {
         <Route
           path="/contactus"
           element={
-            <div className="text-2xl text-center py-20">
+            <div>
               <ContactUs />
             </div>
           }
         />{" "}
-        <Route
-          path="/aboutus"
-          element={<div className="text-2xl text-center py-20">About Us</div>}
-        />{" "}
-        <Route
-          path="/services"
-          element={<div className="text-2xl text-center py-20">Services</div>}
-        />
+        <Route path="/aboutus" element={<AboutUs />} />
+        <Route path="/services" element={<Galery />} />
       </Routes>
     </div>
   );
