@@ -11,11 +11,16 @@ const Layout = () => {
     console.log("Cambio de estado");
   };
 
+  const closeModal = () => {
+    setActive(false);
+    console.log("Cerrando modal");
+  };
+
   return (
     <>
       <Navbar />
       <ContactQr toggleActive={toggleActive} />
-      <QrMenu active={active} />
+      <QrMenu active={active} onClose={closeModal} />
     </>
   );
 };

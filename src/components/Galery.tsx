@@ -71,12 +71,12 @@ const PlumbingGallery: React.FC = () => {
   };
 
   return (
-    <div className="w-full max-w-7xl mx-auto px-7 py-20 open-sans-regular">
+    <div className="w-full max-w-7xl mx-auto px-7 py-15 open-sans-regular">
       <div className="text-center mb-12">
-        <h2 className="text-4xl md:text-4xl lg:text-6xl barlow-condensed-bold font-bold text-blue-perfect mb-4">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl barlow-condensed-bold font-bold text-blue-perfect mb-4">
           Plumbing Work Gallery
         </h2>
-        <p className="text-lg max-w-2xl mx-auto lg:text-lg sm:text-xs md:text-lg open-sans-light">
+        <p className="text-lg  max-w-2xl mx-auto lg:text-lg  md:text-lg open-sans-light">
           Take a look at our work
         </p>
       </div>

@@ -2,7 +2,7 @@ const AboutUs = () => {
   return (
     <div className="min-h-screen bg-blue-perfect">
       {/* Header */}
-      <div className="max-w-4xl mx-auto px-4 py-16 text-center">
+      <div className="max-w-4xl mx-auto px-4 py-14 text-center">
         <h1 className="text-6xl md:text-7xl lg:text-7xl font-bold text-white barlow-condensed-bold mb-1">
           About Us
         </h1>
@@ -14,7 +14,7 @@ const AboutUs = () => {
             <p>
               <strong className="text-blue-perfect">
                 C&G Plumbing Solutions Multiservice
-              </strong>{" "}
+              </strong>
               is your trusted plumbing partner in Miami. We provide reliable
               plumbing services for homes and businesses.
             </p>

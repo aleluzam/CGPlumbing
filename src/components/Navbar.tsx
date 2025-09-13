@@ -90,7 +90,7 @@ const Navbar = () => {
           isOpen ? "opacity-100" : "opacity-0 invisible"
         }`}
       >
-        <ul className="flex flex-col py-2 ">
+        <ul className="flex flex-col py-2">
           {elements.map((e) => (
             <li
               key={e.id}
@@ -98,7 +98,7 @@ const Navbar = () => {
                 toggleLink(e.id);
                 toggleIsOpen();
               }}
-              className={`open-sans-regular text-center my-2 ${
+              className={`open-sans-regular text-center my-5 text-xl ${
                 link == e.id ? "underline" : ""
               }`}
             >

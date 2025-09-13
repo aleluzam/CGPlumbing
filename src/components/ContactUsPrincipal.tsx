@@ -1,14 +1,14 @@
 import Qr from "../assets/images/qr.svg";
 import ContactForm from "./ContactForm";
 
-const ContactUs = () => {
+const ContactUsPrincipal = () => {
   const contact = [
     { id: 1, lenguage: "English", number: "+1 786 123 4567", qr: Qr },
     { id: 2, lenguage: "Spanish", number: "+1 786 123 4567", qr: Qr },
   ];
 
   return (
-    <div className="min-h-screen lg:h-screen py-14">
+    <div className="min-h-screen lg:h-screen py-5">
       <div className="px-4 sm:px-6 lg:px-7">
         <h1 className="text-6xl md:text-7xl lg:text-7xl  barlow-condensed-bold text-center font-bold mb-2 text-blue-perfect">
           Contact Us
@@ -55,4 +55,4 @@ const ContactUs = () => {
   );
 };
 
-export default ContactUs;
+export default ContactUsPrincipal;
