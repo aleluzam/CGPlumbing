@@ -2,7 +2,7 @@ const AboutUs = () => {
   return (
     <div className="min-h-screen bg-blue-perfect">
       {/* Header */}
-      <div className="max-w-4xl mx-auto px-4 py-20 text-center">
+      <div className="max-w-4xl mx-auto px-4 py-26 text-center">
         <h1 className="text-6xl md:text-7xl lg:text-7xl font-bold text-white barlow-condensed-bold mb-1">
           About Us
         </h1>
