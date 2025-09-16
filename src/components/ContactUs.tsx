@@ -19,13 +19,12 @@ const ContactUs = () => {
       </div>
 
       <div className="flex flex-col lg:flex-row px-4 sm:px-6 lg:px-7 py-4 sm:py-5 lg:py-6 gap-6 sm:gap-8 lg:gap-12 xl:gap-16">
-        {/* Sección de contactos */}
         <div className="w-full lg:flex-shrink-0 lg:w-auto">
           <ul className="gap-6 sm:gap-8 lg:gap-10 flex items-center flex-col p-4 sm:p-6 lg:p-8">
             {contact.map((m) => (
               <div
                 key={m.id}
-                className="w-full py-3 sm:py-4 lg:py-5 flex items-center justify-between gap-4 sm:gap-6 lg:gap-8 xl:gap-10"
+                className="w-full py-3 sm:py-4 lg:py-5 flex items-center justify-between gap-4 sm:gap-6 lg:gap-8 xl:gap-35"
               >
                 <div className="text-left flex-1 min-w-0">
                   <h1 className="barlow-condensed-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl py-2 sm:py-3 lg:py-5 leading-tight">

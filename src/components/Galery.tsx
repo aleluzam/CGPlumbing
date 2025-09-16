@@ -14,7 +14,7 @@ const PlumbingGallery: React.FC = () => {
     {
       id: 1,
       imagen:
-        "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop",
+        "https://res.cloudinary.com/dkfykryyj/image/upload/v1758023562/B28D1DC1-AC18-433B-B6C3-59712A1E40DF_otelhi.jpg",
       nombre: "Instalación de Baño Completo",
       descripcion:
         "Renovación completa de baño con instalación de sanitarios y grifería moderna",
@@ -22,35 +22,35 @@ const PlumbingGallery: React.FC = () => {
     {
       id: 2,
       imagen:
-        "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=400&h=300&fit=crop",
+        "https://res.cloudinary.com/dkfykryyj/image/upload/v1758023560/3BB40FB2-4ABF-47D8-BE23-F6E85092F483_zjwado.jpg",
       nombre: "Reparación de Tuberías",
       descripcion: "Reparación y reemplazo de tuberías dañadas en cocina",
     },
     {
       id: 3,
       imagen:
-        "https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?w=400&h=300&fit=crop",
+        "https://res.cloudinary.com/dkfykryyj/image/upload/v1758023563/BDB4C172-42A3-4A16-B634-D33785C70B3F_i2aydq.jpg",
       nombre: "Instalación de Calentador",
       descripcion: "Instalación de calentador de agua de alta eficiencia",
     },
     {
       id: 4,
       imagen:
-        "https://images.unsplash.com/photo-1620626011761-996317b8d101?w=400&h=300&fit=crop",
+        "https://res.cloudinary.com/dkfykryyj/image/upload/v1758023563/1DB8338F-4375-49F4-8B13-F02689B38D38_jg5exl.jpg",
       nombre: "Destape de Drenajes",
       descripcion: "Servicio de destape y limpieza de drenajes obstruidos",
     },
     {
       id: 5,
       imagen:
-        "https://images.unsplash.com/photo-1584622781867-4d8a0e5d8b7d?w=400&h=300&fit=crop",
+        "https://res.cloudinary.com/dkfykryyj/image/upload/v1758023561/2BDBA96D-3359-44F7-9EFA-AC86A7F11064_eqsw57.jpg",
       nombre: "Instalación de Grifería",
       descripcion: "Instalación de grifería moderna en cocina y baños",
     },
     {
       id: 6,
       imagen:
-        "https://images.unsplash.com/photo-1581858822449-3d0c543b0e5d?w=400&h=300&fit=crop",
+        "https://res.cloudinary.com/dkfykryyj/image/upload/v1758023562/F705DDE4-9EE1-4253-8A49-514B1C9E5387_braqoo.jpg",
       nombre: "Reparación de Fugas",
       descripcion: "Detección y reparación de fugas en sistema de tuberías",
     },
