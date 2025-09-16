@@ -5,8 +5,7 @@ import Layout from "./components/Layout";
 import ContactUs from "./components/ContactUs";
 import Galery from "./components/Galery";
 import AboutUs from "./components/AboutUs";
-import Footer from "./components/footer";
-
+import Footer from "./components/Footer";
 function App() {
   return (
     <div className=" min-h-screen flex flex-col">
@@ -18,14 +17,27 @@ function App() {
           element={
             <>
               <ContactUs />
-              <Footer/>
+              <Footer />
             </>
           }
         />{" "}
-        <Route path="/aboutus" element={<><AboutUs />
-        <Footer/>
-        </>} />
-        <Route path="/services" element={<><Galery /> <Footer/></>} />
+        <Route
+          path="/aboutus"
+          element={
+            <>
+              <AboutUs />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="/services"
+          element={
+            <>
+              <Galery /> <Footer />
+            </>
+          }
+        />
       </Routes>
     </div>
   );
