@@ -8,18 +8,17 @@ const ContactUsPrincipal = () => {
   ];
 
   return (
-    <div className="min-h-screen lg:h-screen py-5">
+    <div className="min-h-screen lg:h-screen py-5 lg:px-35">
       <div className="px-4 sm:px-6 lg:px-7">
         <h1 className="text-6xl md:text-7xl lg:text-7xl  barlow-condensed-bold text-center font-bold mb-2 text-blue-perfect">
           Contact Us
         </h1>
-        <h3 className="text-xs sm:text-sm md:text-base lg:text-lg text-center open-sans-light px-4">
+        <h3 className="text-xs sm:text-sm md:text-base lg:text-lg text-center open-sans-light px-4 mb-10">
           Reach out for support via phone or email. We provide free estimates.
         </h3>
       </div>
 
       <div className="flex flex-col lg:flex-row px-4 sm:px-6 lg:px-7 py-4 sm:py-5 lg:py-6 gap-6 sm:gap-8 lg:gap-12 xl:gap-16">
-        {/* Sección de contactos */}
         <div className="w-full lg:flex-shrink-0 lg:w-auto">
           <ul className="gap-6 sm:gap-8 lg:gap-10 flex items-center flex-col p-4 sm:p-6 lg:p-8">
             {contact.map((m) => (

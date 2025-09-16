@@ -43,7 +43,7 @@ const Navbar = () => {
       >
         <div>
           <a href="/">
-            <img src={LogoNavbar} alt="Logo" className="w-[100px] py-1" />
+            <img src={LogoNavbar} alt="Logo" className="w-[120px] lg:w-[130px] py-2" />
           </a>
         </div>
 

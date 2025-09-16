@@ -5,6 +5,7 @@ import Layout from "./components/Layout";
 import ContactUs from "./components/ContactUs";
 import Galery from "./components/Galery";
 import AboutUs from "./components/AboutUs";
+import Footer from "./components/footer";
 
 function App() {
   return (
@@ -15,13 +16,16 @@ function App() {
         <Route
           path="/contactus"
           element={
-            <div>
+            <>
               <ContactUs />
-            </div>
+              <Footer/>
+            </>
           }
         />{" "}
-        <Route path="/aboutus" element={<AboutUs />} />
-        <Route path="/services" element={<Galery />} />
+        <Route path="/aboutus" element={<><AboutUs />
+        <Footer/>
+        </>} />
+        <Route path="/services" element={<><Galery /> <Footer/></>} />
       </Routes>
     </div>
   );

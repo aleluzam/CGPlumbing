@@ -1,4 +1,5 @@
 import ContactUsPrincipal from "./ContactUsPrincipal";
+import Footer from "./footer";
 import HeroSection from "./HeroSection";
 import Services from "./Services";
 
@@ -8,6 +9,7 @@ const Principal = () => {
       <HeroSection />
       <Services />
       <ContactUsPrincipal />
+      <Footer/>
     </>
   );
 };

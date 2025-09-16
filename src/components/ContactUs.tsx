@@ -8,12 +8,12 @@ const ContactUs = () => {
   ];
 
   return (
-    <div className="min-h-screen lg:h-screen py-14">
+    <div className="min-h-screen lg:h-screen py-20 lg:px-35">
       <div className="px-4 sm:px-6 lg:px-7">
         <h1 className="text-6xl md:text-7xl lg:text-7xl  barlow-condensed-bold text-center font-bold mb-2 text-blue-perfect">
           Contact Us
         </h1>
-        <h3 className="text-xs sm:text-sm md:text-base lg:text-lg text-center open-sans-light px-4">
+        <h3 className="text-xs sm:text-sm md:text-base lg:text-lg text-center open-sans-light px-4 mb-10">
           Reach out for support via phone or email. We provide free estimates.
         </h3>
       </div>
