@@ -1,18 +1,19 @@
-import Qr from "../assets/images/qr.svg";
+import QrSpanish from "../assets/images/spanish.svg";
+import QrEnglish from "../assets/images/english.svg";
 import ContactForm from "./ContactForm";
 import FondoTuberias from "../assets/images/FondoTuberias.jpg";
 
 const ContactUsPrincipal = () => {
   const contact = [
-    { id: 1, lenguage: "English", number: "+1 786 123 4567", qr: Qr },
-    { id: 2, lenguage: "Spanish", number: "+1 786 123 4567", qr: Qr },
+    { id: 1, lenguage: "English", number: "+1 786-873-4513", qr: QrEnglish },
+    { id: 2, lenguage: "Spanish", number: "+1 786-795-5723", qr: QrSpanish },
   ];
   const bgImagen = {
     backgroundImage: `url(${FondoTuberias})`,
     backgroundRepeat: "no-repeat",
     backgroundPosition: "bottom",
     backgroundSize: "cover",
-    backgroundColor: "rgba(255, 255, 255, 0.95)", // Aumentado de 0.9 a 0.95
+    backgroundColor: "rgba(255, 255, 255, 0.95)",
     backgroundBlendMode: "overlay",
   };
 
@@ -33,7 +34,7 @@ const ContactUsPrincipal = () => {
             {contact.map((m) => (
               <div
                 key={m.id}
-                className="w-full py-3 sm:py-4 lg:py-5 flex items-center justify-between gap-4 sm:gap-6 lg:gap-8 xl:gap-10"
+                className="w-full py-3 sm:py-4 lg:py-5 flex items-center justify-between gap-4 sm:gap-6 lg:gap-8 xl:gap-35"
               >
                 <div className="text-left flex-1 min-w-0">
                   <h1 className="barlow-condensed-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl py-2 sm:py-3 lg:py-5 leading-tight">
@@ -47,7 +48,7 @@ const ContactUsPrincipal = () => {
                   <img
                     src={m.qr}
                     alt="QR"
-                    className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 xl:w-32 xl:h-32"
+                    className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-36 lg:h-36 xl:w-40 xl:h-40"
                   />
                 </div>
               </div>

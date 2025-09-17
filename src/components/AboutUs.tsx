@@ -8,8 +8,8 @@ const AboutUs = () => {
         </h1>
 
         <p className="lg:text-lg text-xs sm:text-xs md:text-lg open-sans-light text-white">
-          Professional plumbing services with quality work and fair prices. Your
-          satisfaction is our commitment.
+          Reliable plumbing services for your home and business needs. Quality
+          work you can trust.{" "}
         </p>
       </div>
 
@@ -20,9 +20,7 @@ const AboutUs = () => {
           <div className="absolute bottom-0 left-0 w-20 h-20 bg-gradient-to-tr from-teal-50 to-blue-50 rounded-full translate-y-10 -translate-x-10 opacity-40"></div>
 
           <div className="relative z-10">
-            {/* Layout horizontal */}
             <div className="grid lg:grid-cols-2 gap-12 items-start">
-              {/* Lado izquierdo - Información principal */}
               <div className="space-y-6">
                 <div>
                   <h2 className="text-3xl font-bold text-blue-perfect mb-3 barlow-condensed-bold">
@@ -35,8 +33,8 @@ const AboutUs = () => {
 
                 <div className="bg-gradient-to-r from-gray-50 to-gray-100 rounded-xl p-6">
                   <p className="text-gray-700 leading-relaxed">
-                    Licensed, insured, and committed to quality work at fair
-                    prices.
+                    Professional plumbing by experienced and dedicated workers.
+                    Our greatest satisfaction is a job well done.
                     <span className="font-semibold text-blue-perfect">
                       {" "}
                       Your satisfaction is our priority.
@@ -45,7 +43,7 @@ const AboutUs = () => {
                 </div>
 
                 <div>
-                  <p className="text-gray-600 font-medium mb-4">
+                  <p className="text-gray-600 font-medium mb-4 ml-13">
                     Ready to get started?
                   </p>
                   <a

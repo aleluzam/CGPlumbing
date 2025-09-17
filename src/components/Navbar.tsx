@@ -1,16 +1,14 @@
+import { useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
 import LogoNavbar from "../assets/images/LogoNavbar.png";
-import { useState } from "react";
-import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
   const [link, setLink] = useState(1);
+
   const toggleIsOpen = () => {
     setIsOpen(!isOpen);
-  };
-
-  const toggleLink = (link: number) => {
-    setLink(link);
   };
 
   const elements = [
@@ -35,16 +33,26 @@ const Navbar = () => {
       link: "/services",
     },
   ];
+
+  useEffect(() => {
+    const currentPath = location.pathname;
+    const currentElement = elements.find((e) => e.link === currentPath);
+    if (currentElement) {
+      setLink(currentElement.id);
+    }
+  }, [location]);
+
   return (
     <nav className="fixed z-50 w-full">
-      <div
-        className="flex justify-between items-center bg-white sm:py-1 sm:px-4 shadow-lg hover:shadow-xl transition-shadow duration-300
-"
-      >
+      <div className="flex justify-between items-center bg-white sm:py-1 sm:px-4 shadow-lg hover:shadow-xl transition-shadow duration-300">
         <div>
-          <a href="/">
-            <img src={LogoNavbar} alt="Logo" className="w-[120px] lg:w-[130px] py-2" />
-          </a>
+          <Link to="/">
+            <img
+              src={LogoNavbar}
+              alt="Logo"
+              className="w-[120px] lg:w-[130px] py-2"
+            />
+          </Link>
         </div>
 
         <div className="hidden sm:block ">
@@ -52,8 +60,9 @@ const Navbar = () => {
             {elements.map((e) => (
               <li
                 key={e.id}
-                onClick={() => toggleLink(e.id)}
-                className={`open-sans-light ${link == e.id ? "underline" : ""}`}
+                className={`open-sans-light text-sm md:text-lg ${
+                  link == e.id ? "underline" : ""
+                }`}
               >
                 <Link to={e.link}>{e.name}</Link>
               </li>
@@ -95,7 +104,6 @@ const Navbar = () => {
             <li
               key={e.id}
               onClick={() => {
-                toggleLink(e.id);
                 toggleIsOpen();
               }}
               className={`open-sans-regular text-center my-5 text-xl ${

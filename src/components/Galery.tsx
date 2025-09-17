@@ -16,114 +16,121 @@ const PlumbingGallery: React.FC = () => {
       id: 1,
       imagen:
         "https://res.cloudinary.com/dkfykryyj/image/upload/v1758023562/B28D1DC1-AC18-433B-B6C3-59712A1E40DF_otelhi.jpg",
-      nombre: "Instalación de Baño Completo",
+      nombre: "Instalación de Baño Comercial",
       descripcion:
-        "Renovación completa de baño con instalación de sanitarios y grifería moderna",
+        "Instalación completa de sanitarios comerciales con urinarios, inodoros y lavamanos modernos para espacios públicos",
     },
     {
       id: 2,
       imagen:
         "https://res.cloudinary.com/dkfykryyj/image/upload/v1758023560/3BB40FB2-4ABF-47D8-BE23-F6E85092F483_zjwado.jpg",
-      nombre: "Reparación de Tuberías",
-      descripcion: "Reparación y reemplazo de tuberías dañadas en cocina",
+      nombre: "Instalación de Plomería Empotrada",
+      descripcion:
+        "Instalación profesional de válvulas y tuberías empotradas en pared con acabados de calidad y conexiones seguras",
     },
     {
       id: 3,
       imagen:
         "https://res.cloudinary.com/dkfykryyj/image/upload/v1758023563/BDB4C172-42A3-4A16-B634-D33785C70B3F_i2aydq.jpg",
-      nombre: "Instalación de Calentador",
-      descripcion: "Instalación de calentador de agua de alta eficiencia",
+      nombre: "Instalación de Lavamanos Múltiples Comerciales",
+      descripcion:
+        "Instalación profesional de sistema de lavamanos múltiples con encimera continua y grifería moderna para espacios comerciales",
     },
     {
       id: 4,
       imagen:
         "https://res.cloudinary.com/dkfykryyj/image/upload/v1758023563/1DB8338F-4375-49F4-8B13-F02689B38D38_jg5exl.jpg",
-      nombre: "Destape de Drenajes",
-      descripcion: "Servicio de destape y limpieza de drenajes obstruidos",
+      nombre: "Instalación de Plomería Bajo Lavamanos",
+      descripcion:
+        "Instalación profesional de sistema de desagüe y conexiones de agua bajo lavamanos con acabados limpios y organizados",
     },
     {
       id: 5,
       imagen:
         "https://res.cloudinary.com/dkfykryyj/image/upload/v1758023561/2BDBA96D-3359-44F7-9EFA-AC86A7F11064_eqsw57.jpg",
-      nombre: "Instalación de Grifería",
-      descripcion: "Instalación de grifería moderna en cocina y baños",
+      nombre: "Lavamanos Comercial de Acero Inoxidable",
+      descripcion:
+        "Instalación completa de lavamanos comercial de acero inoxidable con grifo moderno y estructura resistente, ideal para uso intensivo en espacios comerciales",
     },
     {
       id: 6,
       imagen:
         "https://res.cloudinary.com/dkfykryyj/image/upload/v1758023562/F705DDE4-9EE1-4253-8A49-514B1C9E5387_braqoo.jpg",
-      nombre: "Reparación de Fugas",
-      descripcion: "Detección y reparación de fugas en sistema de tuberías",
+      nombre: "Instalación de Triturador de Desperdicios",
+      descripcion:
+        "Instalación profesional de triturador de desperdicios modelo ACE 4000 con conexiones de plomería completas y sistema de drenaje optimizado bajo fregadero de cocina",
     },
     {
       id: 7,
       imagen:
         "https://res.cloudinary.com/dkfykryyj/image/upload/v1758023567/FBBB882F-FBC2-4997-A9D9-3E7C6B99C877_n2ephl.jpg",
-      nombre: "Reparación de Fugas",
-      descripcion: "Detección y reparación de fugas en sistema de tuberías",
+      nombre: "Instalación de Fuente de Agua en Gimnasio",
+      descripcion:
+        "Instalación profesional de fuente de agua potable de acero inoxidable con estación de llenado de botellas en ambiente de gimnasio comercial, cumpliendo con estándares de salud pública",
     },
     {
       id: 8,
       imagen:
         "https://res.cloudinary.com/dkfykryyj/image/upload/v1758023565/8C5B2555-463C-4373-9C14-C72AD5C256F1_dtnufd.jpg",
-      nombre: "Reparación de Fugas",
-      descripcion: "Detección y reparación de fugas en sistema de tuberías",
+      nombre: "Instalación de Calentador de Agua Lochinvar",
+      descripcion:
+        "Instalación profesional de calentador de agua a gas marca Lochinvar con conexiones de plomería y gas certificadas, incluyendo válvulas de seguridad y sistema de ventilación en espacio residencial",
     },
     {
       id: 9,
       imagen:
         "https://res.cloudinary.com/dkfykryyj/image/upload/v1758023565/52F3C146-815A-4C71-A301-B62F4C8571B7_aologu.jpg",
-      nombre: "Reparación de Fugas",
-      descripcion: "Detección y reparación de fugas en sistema de tuberías",
+      nombre: "Instalación de Fregadero de Servicio Comercial",
+      descripcion:
+        "Instalación profesional de fregadero de acero inoxidable de servicio pesado con grifería comercial montada en pared, conexiones de plomería certificadas y drenaje industrial en ambiente comercial",
     },
     {
       id: 10,
       imagen:
         "https://res.cloudinary.com/dkfykryyj/image/upload/v1758023564/33745AEB-FA0F-4421-82C7-9A3AC441A4CB_yv9qfa.jpg",
-      nombre: "Reparación de Fugas",
-      descripcion: "Detección y reparación de fugas en sistema de tuberías",
+      nombre: "Instalación de Fuente de Agua Elkay con Estación de Llenado",
+      descripcion:
+        "Instalación profesional de fuente de agua potable marca Elkay con estación integrada de llenado de botellas, conexiones de plomería certificadas y sistema de filtración, montada empotrada en pared para uso comercial o institucional",
     },
     {
       id: 11,
       imagen:
         "https://res.cloudinary.com/dkfykryyj/image/upload/v1758023562/2315E73B-9B21-4FC0-A21B-48FA43AC9CCC_xqcg4o.jpg",
-      nombre: "Reparación de Fugas",
-      descripcion: "Detección y reparación de fugas en sistema de tuberías",
+      nombre: "Instalación de Inodoro de Diseño Contemporáneo",
+      descripcion:
+        "Instalación profesional de inodoro con sistema de descarga empotrado, grifería moderna cromada y acabados de alta calidad en baño contemporáneo con revestimientos cerámicos premium",
     },
     {
       id: 12,
       imagen:
-        "https://res.cloudinary.com/dkfykryyj/image/upload/v1758023561/2BDBA96D-3359-44F7-9EFA-AC86A7F11064_eqsw57.jpg",
-      nombre: "Reparación de Fugas",
-      descripcion: "Detección y reparación de fugas en sistema de tuberías",
+        "https://res.cloudinary.com/dkfykryyj/image/upload/v1758023561/70C24971-4296-47AD-9F9C-A4AC0E0658C5_oxtfah.jpg",
+      nombre: "Instalación de Sistema de Lavabos Múltiples Comerciales",
+      descripcion:
+        "Instalación profesional de batería de lavabos comerciales suspendidos con griferías automáticas, sistema de plomería oculta y conexiones hidráulicas certificadas para baños públicos o institucionales de alto tráfico",
     },
     {
       id: 13,
       imagen:
-        "https://res.cloudinary.com/dkfykryyj/image/upload/v1758023561/70C24971-4296-47AD-9F9C-A4AC0E0658C5_oxtfah.jpg",
-      nombre: "Reparación de Fugas",
-      descripcion: "Detección y reparación de fugas en sistema de tuberías",
+        "https://res.cloudinary.com/dkfykryyj/image/upload/v1758023560/9DA5E0DF-D111-43CB-9FE0-677BC4B781C3_d8xh3z.jpg",
+      nombre: "Instalación de Sistema de Bombeo y Filtración de Agua",
+      descripcion:
+        "Instalación profesional de bomba de agua con sistema de filtración, tuberías de PVC, válvulas de control y conexiones hidráulicas especializadas para suministro de agua residencial o comercial con tecnología de presurización automática",
     },
     {
       id: 14,
       imagen:
-        "https://res.cloudinary.com/dkfykryyj/image/upload/v1758023560/9DA5E0DF-D111-43CB-9FE0-677BC4B781C3_d8xh3z.jpg",
-      nombre: "Reparación de Fugas",
-      descripcion: "Detección y reparación de fugas en sistema de tuberías",
+        "https://res.cloudinary.com/dkfykryyj/image/upload/v1758023560/A910FBDE-1EF6-4D20-AF42-62DFB3251FA1_zecnof.jpg",
+      nombre: "Instalación de Sistema de Plomería en Construcción Nueva",
+      descripcion:
+        "Instalación profesional de red de tuberías de cobre y PVC en obra nueva, con distribución de agua caliente y fría, sistema de drenaje y conexiones hidráulicas pre-instaladas según especificaciones arquitectónicas para construcción residencial o comercial",
     },
     {
       id: 15,
       imagen:
-        "https://res.cloudinary.com/dkfykryyj/image/upload/v1758023560/A910FBDE-1EF6-4D20-AF42-62DFB3251FA1_zecnof.jpg",
-      nombre: "Reparación de Fugas",
-      descripcion: "Detección y reparación de fugas en sistema de tuberías",
-    },
-    {
-      id: 16,
-      imagen:
         "https://res.cloudinary.com/dkfykryyj/image/upload/v1758023560/9AF506CB-6414-4706-B8EC-E730ED2CE701_mdvqtq.jpg",
-      nombre: "Reparación de Fugas",
-      descripcion: "Detección y reparación de fugas en sistema de tuberías",
+      nombre: "Instalación de Conexiones Empotradas para Lavadora",
+      descripcion:
+        "Instalación profesional de conexiones de agua caliente y fría empotradas en pared con válvulas de cierre independientes, caja de conexiones integrada y drenaje inferior para instalación de lavadora o equipos de lavandería con acabado limpio y funcional",
     },
   ];
 
@@ -157,14 +164,14 @@ const PlumbingGallery: React.FC = () => {
       <div className="container mx-auto px-8 md:px-12 lg:px-20 py-26 flex-grow">
         <div className="text-center mb-12">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl barlow-condensed-bold font-bold text-blue-perfect mb-4">
-            Plumbing Work Gallery
+            Plumbing Works Gallery
           </h1>
           <p className="text-xs sm:text-sm md:text-base lg:text-lg text-center open-sans-light px-4 mb-10">
             Take a look at our work
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 open-sans-regular">
           {trabajos.map((trabajo: Trabajo) => (
             <div
               key={trabajo.id}
