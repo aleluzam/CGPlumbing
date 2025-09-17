@@ -1,5 +1,6 @@
 import Qr from "../assets/images/qr.svg";
 import ContactForm from "./ContactForm";
+import FondoTuberias from "../assets/images/FondoTuberias.jpg";
 
 const ContactUs = () => {
   const contact = [
@@ -7,8 +8,20 @@ const ContactUs = () => {
     { id: 2, lenguage: "Spanish", number: "+1 786 123 4567", qr: Qr },
   ];
 
+  const bgImagen = {
+    backgroundImage: `url(${FondoTuberias})`,
+    backgroundRepeat: "no-repeat",
+    backgroundPosition: "bottom",
+    backgroundSize: "cover",
+    backgroundColor: "rgba(255, 255, 255, 0.95)", // Aumentado de 0.9 a 0.95
+    backgroundBlendMode: "overlay",
+  };
+
   return (
-    <div className="min-h-screen lg:h-screen py-26 lg:px-35">
+    <div
+      style={bgImagen}
+      className="min-h-screen lg:h-screen py-26 lg:px-35 bg-"
+    >
       <div className="px-4 sm:px-6 lg:px-7">
         <h1 className="text-6xl md:text-7xl lg:text-7xl  barlow-condensed-bold text-center font-bold mb-2 text-blue-perfect">
           Contact Us

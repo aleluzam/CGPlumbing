@@ -1,5 +1,3 @@
-import Foto1 from "../assets/images/Foto1.jpg";
-
 const Services = () => {
   const elements = [
     {
@@ -7,21 +5,24 @@ const Services = () => {
       name: "Residencial Plumbing",
       description:
         "Quality plumbing services for homes, ensuring comfort and functionality.",
-      image: Foto1,
+      image:
+        "https://res.cloudinary.com/dkfykryyj/image/upload/v1758085285/Creation-Construction-Carpentry-3-3_1_cjfdxo.jpg",
     },
     {
       id: 2,
       name: "Comercial Plumbing",
       description:
         "Comprehensive plumbing services designed for business, completed efficiently and professionally.",
-      image: Foto1,
+      image:
+        "https://res.cloudinary.com/dkfykryyj/image/upload/v1758084594/druckventil-abblaseleitung-1_p5rnxy.jpg",
     },
     {
       id: 3,
       name: "24 Hours Emergency Services",
       description:
         "We handle repairs, installations and maintenance for your plumbing systems.",
-      image: Foto1,
+      image:
+        "https://res.cloudinary.com/dkfykryyj/image/upload/v1758085639/pipe-leaking-under-dripping-tap_ndra6x.webp",
     },
   ];
 
