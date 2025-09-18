@@ -1,6 +1,7 @@
 import FondoTuberias from "../assets/images/FondoTuberias.jpg";
 import Logo from "../assets/images/Logo.png";
 import ContactButton from "./Button";
+import { FormattedMessage } from "react-intl";
 
 const HeroSection = () => {
   const bgImagen = {
@@ -16,7 +17,7 @@ const HeroSection = () => {
         <div>
           <img src={Logo} alt="LogoPrincipal" className="w-150 sm:w-200 mt-5" />
           <h1 className="open-sans-bold text-xs sm:text-xl text-center lg:text-2xl">
-            “Al the solutions you need are just a phone call away”
+            <FormattedMessage id="slogan" />
           </h1>
         </div>
         <div className="mt-9">
