@@ -47,7 +47,7 @@ const AboutUs = () => {
                     Ready to get started?
                   </p>
                   <a
-                    href="tel:+17861234567"
+                    href="tel:+17868734513"
                     className="inline-flex items-center space-x-2 bg-gradient-to-r from-teal-500 to-teal-600 hover:from-teal-600 hover:to-teal-700 text-white font-bold py-3 px-8 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
                   >
                     <svg
@@ -63,7 +63,7 @@ const AboutUs = () => {
                         d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
                       ></path>
                     </svg>
-                    <span>Call: +1 786 123 4567</span>
+                    <span>Call: +1 786-873-4513</span>
                   </a>
                 </div>
               </div>

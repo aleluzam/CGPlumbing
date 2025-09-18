@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
-import Qr from "../assets/images/qr.svg";
+import QrSpanish from "../assets/images/spanish.svg";
+import QrEnglish from "../assets/images/english.svg";
 
 interface Props {
   active: boolean;
@@ -93,8 +94,12 @@ const QrMenu = ({ active, onClose }: Props) => {
             </div>
 
             <div className="hidden lg:block">
-              <img className="w-50 mx-auto mb-4" src={Qr} alt="QR English" />
-              <h2 className="open-sans-light mb-5">+53 5301 1238</h2>
+              <img
+                className="w-50 mx-auto mb-4"
+                src={QrEnglish}
+                alt="QR English"
+              />
+              <h2 className="open-sans-light mb-5">+1 786-873-4513</h2>
             </div>
           </div>
 
@@ -113,8 +118,12 @@ const QrMenu = ({ active, onClose }: Props) => {
             </div>
 
             <div className="hidden lg:block">
-              <img className="w-50 mx-auto mb-4" src={Qr} alt="QR Spanish" />
-              <h2 className="open-sans-light mb-5">+1 876 453 4578</h2>
+              <img
+                className="w-50 mx-auto mb-4"
+                src={QrSpanish}
+                alt="QR Spanish"
+              />
+              <h2 className="open-sans-light mb-5">+1 786-795-5723</h2>
             </div>
           </div>
         </div>

@@ -48,7 +48,7 @@ const ContactUsPrincipal = () => {
                   <img
                     src={m.qr}
                     alt="QR"
-                    className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-36 lg:h-36 xl:w-40 xl:h-40"
+                    className="w-24 h-24 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-36 lg:h-36 xl:w-40 xl:h-40"
                   />
                 </div>
               </div>
