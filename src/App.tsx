@@ -10,38 +10,46 @@ import browserLang from "browser-lang";
 import { useState, useEffect } from "react";
 import { IntlProvider } from "react-intl";
 
-const supportedLanguages = ["en", "es"];
+const supportedLanguages = ["en", "es"] as const;
+type SupportedLanguage = (typeof supportedLanguages)[number];
+
+interface TranslationMessages {
+  [key: string]: string;
+}
 
 function App() {
   const defaultLocale = browserLang({
-    languages: supportedLanguages,
-    fallback: "en",
+    languages: [...supportedLanguages],
+    fallback: "en" as SupportedLanguage,
+  }) as SupportedLanguage;
+
+  const [locale] = useState<SupportedLanguage>(() => {
+    const saved = localStorage.getItem("preferredLanguage");
+    return saved && supportedLanguages.includes(saved as SupportedLanguage)
+      ? (saved as SupportedLanguage)
+      : defaultLocale;
   });
 
-  const [locale, setLocale] = useState(() => {
-    const saved = localStorage.getItem("preferredLanguage");
-    return saved && supportedLanguages.includes(saved) ? saved : defaultLocale;
-  });
-  const [messages, setMessages] = useState<Record<string, string>>({});
-  const [loading, setLoading] = useState(true);
+  const [messages, setMessages] = useState<TranslationMessages>({});
+  const [loading, setLoading] = useState<boolean>(true);
 
   useEffect(() => {
-    const apiKey = "eIKKfBUtybNXFADVHQZwTg";
+    const apiKey: string = "eIKKfBUtybNXFADVHQZwTg";
 
     fetch(
       `https://api.i18nexus.com/project_resources/translations/${locale}/default?api_key=${apiKey}`
     )
-      .then((response) => {
+      .then((response: Response) => {
         if (!response.ok) {
           throw new Error("Error al cargar traducciones");
         }
         return response.json();
       })
-      .then((data) => {
+      .then((data: TranslationMessages) => {
         setMessages(data);
         setLoading(false);
       })
-      .catch((error) => {
+      .catch((error: Error) => {
         console.error("Error cargando traducciones:", error);
         setMessages({
           nav_home: "Home",
@@ -62,7 +70,7 @@ function App() {
   }
 
   return (
-    <IntlProvider locale={locale} messages={messages}>
+    <IntlProvider locale={locale} messages={messages} defaultLocale="en">
       <div className="min-h-screen flex flex-col">
         <Layout />
         <Routes>
