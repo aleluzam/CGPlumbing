@@ -44,13 +44,13 @@ const Navbar = () => {
 
   return (
     <nav className="fixed z-50 w-full">
-      <div className="flex justify-between items-center bg-white sm:py-1 sm:px-4 shadow-lg hover:shadow-xl transition-shadow duration-300">
+      <div className="flex justify-between items-center bg-white sm:py-1 px-2 sm:px-5 shadow-lg hover:shadow-xl transition-shadow duration-300">
         <div>
           <Link to="/">
             <img
               src={LogoNavbar}
               alt="Logo"
-              className="w-[120px] lg:w-[130px] py-2"
+              className="w-[140px] lg:w-[130px] py-2"
             />
           </Link>
         </div>
@@ -71,7 +71,7 @@ const Navbar = () => {
         </div>
         <button onClick={toggleIsOpen} className="sm:hidden px-4">
           <svg
-            className="w-6 h-6"
+            className="w-7 h-7"
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"

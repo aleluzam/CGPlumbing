@@ -67,7 +67,7 @@ const Footer = () => {
           style={{ borderTop: "1px solid #3d6b63" }}
         >
           <p className="text-xs mb-3" style={{ color: "#6bc4ba" }}>
-            Website created by{" "}
+            Website developed by{" "}
             <a
               href="https://github.com/aleluzam"
               target="_blank"
@@ -75,9 +75,12 @@ const Footer = () => {
               className="hover:text-white underline"
             >
               Code Stick
-            </a>
+            </a>{" "}
+            |{" "}
+            <span className="font-semibold hover:text-white">
+              Astillas y Más
+            </span>
           </p>
-
           <div
             className="pt-3 text-sm"
             style={{ borderTop: "1px solid #4a7c73", color: "#6bc4ba" }}

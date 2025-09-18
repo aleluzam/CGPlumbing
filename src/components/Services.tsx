@@ -39,7 +39,7 @@ const Services = () => {
         </div>
 
         <div className="w-full max-w-6xl">
-          <div className="flex flex-col lg:flex-row gap-6 mb-3">
+          <div className="flex flex-col lg:flex-row gap-6 mb-3 mt-10">
             {elements.map((element) => (
               <div
                 key={element.id}
@@ -53,10 +53,12 @@ const Services = () => {
                   />
                 </div>
                 <div className="p-6">
-                  <h2 className="text-xl font-bold mb-3 text-gray-800">
+                  <h2 className="text-xl font-bold mb-3 text-gray-800 text-center">
                     {element.name}
                   </h2>
-                  <p className="text-gray-600 text-sm">{element.description}</p>
+                  <p className="text-gray-600 text-sm text-center">
+                    {element.description}
+                  </p>
                 </div>
               </div>
             ))}
