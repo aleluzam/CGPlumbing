@@ -21,7 +21,7 @@ const HeroSection = () => {
           </h1>
         </div>
         <div className="mt-9">
-          <ContactButton children="Contact Us" />
+          <ContactButton />
         </div>
       </div>
     </div>

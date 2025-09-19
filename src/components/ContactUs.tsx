@@ -2,11 +2,12 @@ import QrSpanish from "../assets/images/spanish.svg";
 import QrEnglish from "../assets/images/english.svg";
 import ContactForm from "./ContactForm";
 import FondoTuberias from "../assets/images/FondoTuberias.jpg";
+import { FormattedMessage } from "react-intl";
 
 const ContactUs = () => {
   const contact = [
     { id: 1, lenguage: "English", number: "+1 786-873-4513", qr: QrEnglish },
-    { id: 2, lenguage: "Spanish", number: "+1 786-795-5723", qr: QrSpanish },
+    { id: 2, lenguage: "Español", number: "+1 786-795-5723", qr: QrSpanish },
   ];
 
   const bgImagen = {
@@ -25,10 +26,10 @@ const ContactUs = () => {
     >
       <div className="px-4 sm:px-6 lg:px-7">
         <h1 className="text-6xl md:text-7xl lg:text-7xl  barlow-condensed-bold text-center font-bold mb-2 text-blue-perfect">
-          Contact Us
+          <FormattedMessage id="contactustitle" />
         </h1>
         <h3 className="text-xs sm:text-sm md:text-base lg:text-lg text-center open-sans-light px-4 mb-10">
-          Reach out for support via phone or email. We provide free estimates.
+          <FormattedMessage id="contactusdescription" />
         </h3>
       </div>
 

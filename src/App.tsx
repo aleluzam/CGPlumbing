@@ -6,6 +6,7 @@ import ContactUs from "./components/ContactUs";
 import Galery from "./components/Galery";
 import AboutUs from "./components/AboutUs";
 import Footer from "./components/Footer";
+import LanguageSelector from "./components/LanguageSelector"; // Nuevo import
 import browserLang from "browser-lang";
 import { useState, useEffect } from "react";
 import { IntlProvider } from "react-intl";
@@ -23,7 +24,7 @@ function App() {
     fallback: "en" as SupportedLanguage,
   }) as SupportedLanguage;
 
-  const [locale] = useState<SupportedLanguage>(() => {
+  const [locale, setLocale] = useState<SupportedLanguage>(() => {
     const saved = localStorage.getItem("preferredLanguage");
     return saved && supportedLanguages.includes(saved as SupportedLanguage)
       ? (saved as SupportedLanguage)
@@ -33,11 +34,16 @@ function App() {
   const [messages, setMessages] = useState<TranslationMessages>({});
   const [loading, setLoading] = useState<boolean>(true);
 
+  const changeLanguage = (newLocale: SupportedLanguage) => {
+    setLocale(newLocale);
+    localStorage.setItem("preferredLanguage", newLocale);
+  };
+
   useEffect(() => {
-    const apiKey: string = "eIKKfBUtybNXFADVHQZwTg";
+    const apiKey: string = "lcTD39OaZ8D-7SusM9T5Kg";
 
     fetch(
-      `https://api.i18nexus.com/project_resources/translations/${locale}/default?api_key=${apiKey}`
+      `https://api.i18nexus.com/project_resources/translations/${locale}/principal?api_key=${apiKey}`
     )
       .then((response: Response) => {
         if (!response.ok) {
@@ -63,8 +69,8 @@ function App() {
 
   if (loading) {
     return (
-      <div className="min-h-screen flex items-center justify-center">
-        <p>Cargando...</p>
+      <div className="min-h-screen flex items-center justify-center w-full">
+        <p>Loading...</p>
       </div>
     );
   }
@@ -103,6 +109,10 @@ function App() {
             }
           />
         </Routes>
+        <LanguageSelector
+          currentLocale={locale}
+          onLanguageChange={changeLanguage}
+        />
       </div>
     </IntlProvider>
   );

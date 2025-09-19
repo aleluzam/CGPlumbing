@@ -1,3 +1,4 @@
+import { FormattedMessage } from "react-intl";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -8,31 +9,31 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold text-white mb-2">CG Plumbing</h3>
             <p className="text-sm mb-1" style={{ color: "#a8d5d0" }}>
-              Professional plumbing services
+              <FormattedMessage id="footerdescription" />
             </p>
             <p className="text-sm" style={{ color: "#8cccc4" }}>
-              📍 Miami & surrounding areas
+              📍 Miami
             </p>
           </div>
 
           <div>
             <h4 className="font-semibold mb-2" style={{ color: "#a8d5d0" }}>
-              Quick Links
+              <FormattedMessage id="footerquicklinks" />{" "}
             </h4>
             <div className="space-y-1 text-sm" style={{ color: "#8cccc4" }}>
               <div>
                 <Link to="/contactus" className="hover:text-white">
-                  Contact Us
+                  <FormattedMessage id="navbarcontactus" />{" "}
                 </Link>
               </div>
               <div>
                 <Link to="/services" className="hover:text-white">
-                  Services
+                  <FormattedMessage id="navbarservices" />{" "}
                 </Link>
               </div>
               <div>
                 <Link to="/aboutus" className="hover:text-white">
-                  About Us
+                  <FormattedMessage id="navbaraboutus" />{" "}
                 </Link>
               </div>
             </div>
@@ -40,7 +41,7 @@ const Footer = () => {
 
           <div>
             <h4 className="font-semibold mb-2" style={{ color: "#a8d5d0" }}>
-              Contact
+              <FormattedMessage id="footercontact" />{" "}
             </h4>
             <div className="space-y-1 text-sm" style={{ color: "#8cccc4" }}>
               <div>
@@ -67,7 +68,7 @@ const Footer = () => {
           style={{ borderTop: "1px solid #3d6b63" }}
         >
           <p className="text-xs mb-3" style={{ color: "#6bc4ba" }}>
-            Website developed by{" "}
+            <FormattedMessage id="footerdeveloped" />{" "}
             <a
               href="https://github.com/aleluzam"
               target="_blank"
@@ -85,7 +86,7 @@ const Footer = () => {
             className="pt-3 text-sm"
             style={{ borderTop: "1px solid #4a7c73", color: "#6bc4ba" }}
           >
-            © {new Date().getFullYear()} CG Plumbing - All rights reserved
+            © {new Date().getFullYear()} <FormattedMessage id="footerverify" />{" "}
           </div>
         </div>
       </div>

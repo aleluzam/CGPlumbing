@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import LogoNavbar from "../assets/images/LogoNavbar.png";
+import { FormattedMessage } from "react-intl";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,21 +17,25 @@ const Navbar = () => {
       id: 1,
       name: "Home",
       link: "/",
+      language: "navbarhome",
     },
     {
       id: 2,
       name: "Contact Us",
       link: "/contactus",
+      language: "navbarcontactus",
     },
     {
       id: 3,
       name: "About Us",
       link: "/aboutus",
+      language: "navbaraboutus",
     },
     {
       id: 4,
       name: "Services",
       link: "/services",
+      language: "navbarservices",
     },
   ];
 
@@ -64,7 +69,9 @@ const Navbar = () => {
                   link == e.id ? "underline" : ""
                 }`}
               >
-                <Link to={e.link}>{e.name}</Link>
+                <Link to={e.link}>
+                  <FormattedMessage id={e.language} />
+                </Link>
               </li>
             ))}
           </ul>
@@ -110,7 +117,9 @@ const Navbar = () => {
                 link == e.id ? "underline" : ""
               }`}
             >
-              <Link to={e.link}>{e.name}</Link>
+              <Link to={e.link}>
+                <FormattedMessage id={e.language} />
+              </Link>
             </li>
           ))}
         </ul>

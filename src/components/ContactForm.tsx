@@ -1,4 +1,5 @@
 import { useForm, ValidationError } from "@formspree/react";
+import { FormattedMessage } from "react-intl";
 
 function ContactForm() {
   const [state, handleSubmit] = useForm("xgvlrjne");
@@ -16,14 +17,14 @@ function ContactForm() {
   return (
     <div className="flex flex-col justify-center min-h-[400px] lg:min-h-[500px] text-left">
       <h1 className="barlow-condensed-bold lg:text-5xl text-2xl sm:text-3xl md:text-4xl text-center">
-        Tell us your inquiries
+        <FormattedMessage id="inquiriestitle" />
       </h1>
       <form onSubmit={handleSubmit} className="space-y-4 p-10">
         <label
           htmlFor="name"
           className="block text-sm font-medium open-sans-semibold text-left"
         >
-          Name
+          <FormattedMessage id="inquiriesname" />
         </label>
         <input
           id="name"
@@ -42,7 +43,7 @@ function ContactForm() {
           htmlFor="email"
           className="block text-sm font-medium open-sans-semibold text-left"
         >
-          Email Address
+          <FormattedMessage id="inquiriesemail" />
         </label>
         <input
           id="email"
@@ -61,7 +62,7 @@ function ContactForm() {
           htmlFor="message"
           className="block text-sm open-sans-semibold font-medium text-left"
         >
-          Message
+          <FormattedMessage id="inquiriesmessage" />
         </label>
         <textarea
           id="message"
@@ -81,7 +82,7 @@ function ContactForm() {
             disabled={state.submitting}
             className="px-4 py-2 bg-blue-perfect text-white rounded-2xl hover:bg-[#3a9b8e] disabled:opacity-50"
           >
-            Submit
+            <FormattedMessage id="inquiriessubmit" />
           </button>
         </div>
       </form>
