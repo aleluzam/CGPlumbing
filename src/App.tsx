@@ -6,7 +6,7 @@ import ContactUs from "./components/ContactUs";
 import Galery from "./components/Galery";
 import AboutUs from "./components/AboutUs";
 import Footer from "./components/Footer";
-import LanguageSelector from "./components/LanguageSelector"; // Nuevo import
+import LanguageSelector from "./components/LanguageSelector";
 import browserLang from "browser-lang";
 import { useState, useEffect } from "react";
 import { IntlProvider } from "react-intl";
