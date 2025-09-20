@@ -12,6 +12,7 @@
   "dependencies": {
     "@formspree/react": "^3.0.0",
     "@tailwindcss/vite": "^4.1.12",
+    "@vercel/analytics": "^1.5.0",
     "browser-lang": "^0.2.1",
     "lucide-react": "^0.544.0",
     "react": "^19.1.1",
