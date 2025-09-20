@@ -11,9 +11,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>C&G Plumbing</title>
 
+    <script>
+      const PREVIEW_IMAGE = "./src/assets/images/html.png";
+    </script>
+
     <meta
       name="description"
-      content="Professional plumbing services in Miami, Florida. C&G Plumbing offers emergency repairs, drain cleaning, pipe installations and water heater services. Licensed plumbers available 24/7 in Miami-Dade County."
+      content="Professional plumbing services in Miami, Florida. C&G Plumbing offers emergency repairs, drain cleaning, pipe installations and water heater services. Expert plumbers available 24/7 in Miami-Dade County."
     />
     <meta
       name="keywords"
@@ -35,7 +39,7 @@
     />
     <meta
       property="og:description"
-      content="Professional plumbing services in Miami, Florida. Emergency repairs, drain cleaning, installations. Licensed plumbers available 24/7."
+      content="Professional plumbing services in Miami, Florida. Emergency repairs, drain cleaning, installations. Expert plumbers available 24/7."
     />
     <meta property="og:locale" content="en_US" />
     <meta property="og:site_name" content="C&G Plumbing" />
@@ -51,9 +55,8 @@
     />
     <meta
       property="twitter:description"
-      content="Professional plumbing services in Miami, Florida. Emergency repairs, drain cleaning, installations. Licensed plumbers available 24/7."
+      content="Professional plumbing services in Miami, Florida. Emergency repairs, drain cleaning, installations. Expert plumbers available 24/7."
     />
-    <meta property="twitter:image" />
 
     <link rel="canonical" href="https://cgmultiserviceplumbing.com" />
 
@@ -185,22 +188,54 @@
           },
           {
             "@type": "Question",
-            "name": "Are you licensed to work in Florida?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes, all C&G Plumbing technicians are licensed and insured in the state of Florida. We comply with all local Miami-Dade County regulations."
-            }
-          },
-          {
-            "@type": "Question",
             "name": "What areas of Miami do you cover?",
             "acceptedAnswer": {
               "@type": "Answer",
               "text": "C&G Plumbing serves the entire Miami metropolitan area including: Miami, Miami Beach, Coral Gables, Hialeah, Homestead, Kendall, Doral, Aventura, Pinecrest and more Miami-Dade areas."
             }
+          },
+          {
+            "@type": "Question",
+            "name": "What plumbing services do you offer?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "C&G Plumbing offers comprehensive plumbing services including emergency repairs, drain cleaning, pipe installations, water heater services, leak detection, and bathroom renovations throughout Miami-Dade County."
+            }
           }
         ]
       }
+    </script>
+
+    <!-- Configurar imagen de previsualización dinámicamente -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Open Graph
+        const ogImage = document.createElement("meta");
+        ogImage.setAttribute("property", "og:image");
+        ogImage.setAttribute("content", PREVIEW_IMAGE);
+        document.head.appendChild(ogImage);
+
+        const ogImageWidth = document.createElement("meta");
+        ogImageWidth.setAttribute("property", "og:image:width");
+        ogImageWidth.setAttribute("content", "1200");
+        document.head.appendChild(ogImageWidth);
+
+        const ogImageHeight = document.createElement("meta");
+        ogImageHeight.setAttribute("property", "og:image:height");
+        ogImageHeight.setAttribute("content", "630");
+        document.head.appendChild(ogImageHeight);
+
+        const ogImageType = document.createElement("meta");
+        ogImageType.setAttribute("property", "og:image:type");
+        ogImageType.setAttribute("content", "image/jpeg");
+        document.head.appendChild(ogImageType);
+
+        // Twitter
+        const twitterImage = document.createElement("meta");
+        twitterImage.setAttribute("property", "twitter:image");
+        twitterImage.setAttribute("content", PREVIEW_IMAGE);
+        document.head.appendChild(twitterImage);
+      });
     </script>
   </head>
   <body>
