@@ -1,21 +1,20 @@
+import { FormattedMessage } from "react-intl";
+
 const AboutUs = () => {
   return (
     <div className="min-h-screen bg-blue-perfect">
-      {/* Header con cartel descriptivo simple como en Contact Us */}
       <div className="max-w-4xl mx-auto px-4 py-26 text-center">
         <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white barlow-condensed-bold mb-2 tracking-tight">
-          About Us
+          <FormattedMessage id="navbaraboutus" />
         </h1>
 
         <p className="lg:text-lg text-xs sm:text-xs md:text-lg open-sans-light text-white">
-          Reliable plumbing services for your home and business needs. Quality
-          work you can trust.{" "}
+          <FormattedMessage id="aboutusdescritpion" />
         </p>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 pb-12">
         <div className="bg-white rounded-3xl p-8 shadow-2xl relative overflow-hidden">
-          {/* Decorative elements */}
           <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-teal-100 to-blue-100 rounded-full -translate-y-12 translate-x-12 opacity-60"></div>
           <div className="absolute bottom-0 left-0 w-20 h-20 bg-gradient-to-tr from-teal-50 to-blue-50 rounded-full translate-y-10 -translate-x-10 opacity-40"></div>
 
@@ -27,24 +26,23 @@ const AboutUs = () => {
                     C&G Plumbing Solutions Multiservice
                   </h2>
                   <p className="text-lg text-gray-600 font-medium">
-                    Your trusted plumbing partner in Miami
+                    <FormattedMessage id="aboutuslocation" />
                   </p>
                 </div>
 
                 <div className="bg-gradient-to-r from-gray-50 to-gray-100 rounded-xl p-6">
                   <p className="text-gray-700 leading-relaxed">
-                    Professional plumbing by experienced and dedicated workers.
-                    Our greatest satisfaction is a job well done.
+                    <FormattedMessage id="aboutusexplication" />
                     <span className="font-semibold text-blue-perfect">
                       {" "}
-                      Your satisfaction is our priority.
+                      <FormattedMessage id="aboutussatisfaction" />
                     </span>
                   </p>
                 </div>
 
                 <div>
                   <p className="text-gray-600 font-medium mb-4 ml-13">
-                    Ready to get started?
+                    <FormattedMessage id="aboutusready" />
                   </p>
                   <a
                     href="tel:+17868734513"
@@ -63,12 +61,13 @@ const AboutUs = () => {
                         d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
                       ></path>
                     </svg>
-                    <span>Call: +1 786-873-4513</span>
+                    <span>
+                      <FormattedMessage id="aboutusphone" />
+                    </span>
                   </a>
                 </div>
               </div>
 
-              {/* Lado derecho - Features verticalmente alineadas */}
               <div className="flex flex-col justify-start space-y-4">
                 <div className="flex items-center space-x-4 p-4 rounded-xl bg-gradient-to-r from-gray-50 to-white border border-gray-100">
                   <div className="w-12 h-12 bg-teal-500 rounded-full flex items-center justify-center flex-shrink-0">
@@ -88,10 +87,10 @@ const AboutUs = () => {
                   </div>
                   <div className="flex-1">
                     <h3 className="font-semibold text-gray-800">
-                      Homes & Businesses
+                      <FormattedMessage id="aboutushomes" />
                     </h3>
                     <p className="text-gray-600 text-sm">
-                      Reliable plumbing services
+                      <FormattedMessage id="aboutushomedescription" />
                     </p>
                   </div>
                 </div>
@@ -114,10 +113,10 @@ const AboutUs = () => {
                   </div>
                   <div className="flex-1">
                     <h3 className="font-semibold text-gray-800">
-                      24/7 Available
+                      <FormattedMessage id="aboutusavaible" />
                     </h3>
                     <p className="text-gray-600 text-sm">
-                      Emergency repairs anytime
+                      <FormattedMessage id="aboutusavaibledescription" />
                     </p>
                   </div>
                 </div>
@@ -140,9 +139,12 @@ const AboutUs = () => {
                   </div>
                   <div className="flex-1">
                     <h3 className="font-semibold text-gray-800">
-                      Bilingual Service
+                      <FormattedMessage id="aboutusbilingual" />
                     </h3>
-                    <p className="text-gray-600 text-sm">English and Spanish</p>
+                    <p className="text-gray-600 text-sm">
+                      {" "}
+                      <FormattedMessage id="aboutusbilingualdescription" />
+                    </p>
                   </div>
                 </div>
               </div>

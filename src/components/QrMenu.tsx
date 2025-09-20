@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import QrSpanish from "../assets/images/spanish.svg";
 import QrEnglish from "../assets/images/english.svg";
+import { FormattedMessage } from "react-intl";
 
 interface Props {
   active: boolean;
@@ -75,7 +76,7 @@ const QrMenu = ({ active, onClose }: Props) => {
         </button>
 
         <h1 className="text-center barlow-condensed-bold text-3xl lg:text-3xl p-2">
-          Get in Touch
+          <FormattedMessage id="menutitle" />
         </h1>
 
         <div className="lg:flex lg:gap-20 text-center">
@@ -83,7 +84,7 @@ const QrMenu = ({ active, onClose }: Props) => {
             <h1 className="lg:p-2 p-1 barlow-condensed-bold">English</h1>
 
             <div className="block lg:hidden">
-              <a href="tel:+5353011238">
+              <a href="tel:+17868734513">
                 <button
                   className="bg-orange-perfect px-5 py-1 open-sans-regular border-1 rounded-2xl mb-6 cursor-pointer
                 hover:bg-orange-600 transition-colors duration-200 transform hover:scale-105"
@@ -104,10 +105,10 @@ const QrMenu = ({ active, onClose }: Props) => {
           </div>
 
           <div>
-            <h1 className="lg:p-2 p-1 barlow-condensed-bold">Spanish</h1>
+            <h1 className="lg:p-2 p-1 barlow-condensed-bold">Español</h1>
 
             <div className="block lg:hidden">
-              <a href="tel:+18764534578">
+              <a href="tel:+17867955723">
                 <button
                   className="bg-orange-perfect px-5 py-1 open-sans-regular border-1 rounded-2xl mb-6 cursor-pointer
                 hover:bg-orange-600 transition-colors duration-200 transform hover:scale-105"
