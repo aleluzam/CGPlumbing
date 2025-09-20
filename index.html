@@ -11,8 +11,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>C&G Plumbing</title>
 
+    <!-- 🖼️ IMAGEN DE PREVISUALIZACIÓN - Solo edita esta variable -->
     <script>
-      const PREVIEW_IMAGE = "./src/assets/images/html.png";
+      const PREVIEW_IMAGE_URL = "./src/assets/images/html.png";
     </script>
 
     <meta
@@ -31,6 +32,7 @@
     <meta name="geo.position" content="25.7617;-80.1918" />
     <meta name="ICBM" content="25.7617, -80.1918" />
 
+    <!-- Open Graph Meta Tags -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://cgmultiserviceplumbing.com/" />
     <meta
@@ -41,9 +43,17 @@
       property="og:description"
       content="Professional plumbing services in Miami, Florida. Emergency repairs, drain cleaning, installations. Expert plumbers available 24/7."
     />
+    <meta
+      property="og:image"
+      content="https://cgmultiserviceplumbing.com/src/assets/images/og-preview-image.jpg"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:type" content="image/jpeg" />
     <meta property="og:locale" content="en_US" />
     <meta property="og:site_name" content="C&G Plumbing" />
 
+    <!-- Twitter Card Meta Tags -->
     <meta property="twitter:card" content="summary_large_image" />
     <meta
       property="twitter:url"
@@ -57,6 +67,10 @@
       property="twitter:description"
       content="Professional plumbing services in Miami, Florida. Emergency repairs, drain cleaning, installations. Expert plumbers available 24/7."
     />
+    <meta
+      property="twitter:image"
+      content="https://cgmultiserviceplumbing.com/src/assets/images/og-preview-image.jpg"
+    />
 
     <link rel="canonical" href="https://cgmultiserviceplumbing.com" />
 
@@ -68,7 +82,7 @@
     <link
       rel="alternate"
       hreflang="es"
-      href="https://cgmultiserviceplumbing.comes/"
+      href="https://cgmultiserviceplumbing.com/es/"
     />
     <link
       rel="alternate"
@@ -85,11 +99,11 @@
       {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
-        "@id": "https://cgplumbing.com",
+        "@id": "https://cgmultiserviceplumbing.com",
         "name": "C&G Plumbing",
         "alternateName": "C&G Plumbing Miami",
         "description": "Professional plumbing services in Miami, Florida. Specialists in emergency repairs, drain cleaning, pipe installations and water heater services.",
-        "url": "https://cgplumbing.com",
+        "url": "https://cgmultiserviceplumbing.com",
         "telephone": "+1 786-873-4513",
         "email": "cgplumbingmultiservi@gmail.com",
         "address": {
@@ -204,38 +218,6 @@
           }
         ]
       }
-    </script>
-
-    <!-- Configurar imagen de previsualización dinámicamente -->
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        // Open Graph
-        const ogImage = document.createElement("meta");
-        ogImage.setAttribute("property", "og:image");
-        ogImage.setAttribute("content", PREVIEW_IMAGE);
-        document.head.appendChild(ogImage);
-
-        const ogImageWidth = document.createElement("meta");
-        ogImageWidth.setAttribute("property", "og:image:width");
-        ogImageWidth.setAttribute("content", "1200");
-        document.head.appendChild(ogImageWidth);
-
-        const ogImageHeight = document.createElement("meta");
-        ogImageHeight.setAttribute("property", "og:image:height");
-        ogImageHeight.setAttribute("content", "630");
-        document.head.appendChild(ogImageHeight);
-
-        const ogImageType = document.createElement("meta");
-        ogImageType.setAttribute("property", "og:image:type");
-        ogImageType.setAttribute("content", "image/jpeg");
-        document.head.appendChild(ogImageType);
-
-        // Twitter
-        const twitterImage = document.createElement("meta");
-        twitterImage.setAttribute("property", "twitter:image");
-        twitterImage.setAttribute("content", PREVIEW_IMAGE);
-        document.head.appendChild(twitterImage);
-      });
     </script>
   </head>
   <body>
