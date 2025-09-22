@@ -2,7 +2,7 @@ import { useForm, ValidationError } from "@formspree/react";
 import { FormattedMessage } from "react-intl";
 
 function ContactForm() {
-  const [state, handleSubmit] = useForm("xgvlrjne");
+  const [state, handleSubmit] = useForm("xvgwpdpz");
 
   if (state.succeeded) {
     return (
